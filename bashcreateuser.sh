@@ -3,7 +3,7 @@ read -sp "Enter user password: " password
 echo
 read -sp "Confirm password: " password_confirm
 
-result_perm = "u=" 
+result_perm="u=" 
 
 if [ "$password" == "$password_confirm" ]; then
   echo
@@ -20,9 +20,13 @@ if [ "$password" == "$password_confirm" ]; then
   if [[ $exec_perm == "y" ]]; then
     result_perm+="x"
   fi
-  touch testfile.txt  # Creating a dummy file to apply permissions
-  chmod $result_perm testfile.txt
-  echo "Permissions $result_perm applied to testfile.txt."
+  echo "Permissions: $result_perm"
+ 
+  sudo adduser "$name"
+  sleep 1
+  sudo chown -R "$name:$name" "/home/$name"
+  sudo chmod -R "$result_perm" "/home/$name"
+  echo "Permissions applied to /home/$name."
 else
   echo
   echo "Passwords do not match. Please try again."
