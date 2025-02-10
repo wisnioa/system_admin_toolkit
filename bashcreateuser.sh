@@ -1,3 +1,4 @@
+#!/bin/bash
 read -p "Enter username: " name
 read -sp "Enter user password: " password
 echo
