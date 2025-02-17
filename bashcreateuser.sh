@@ -29,23 +29,21 @@ get_permissions() {
     echo "$perms"
 }
 
-
 read -p "Enter username: " name
 if [[ -z "$name" ]]; then
     echo "Username cannot be empty."
     exit 1
 fi
 
-
 get_password
 
 result_perm=$(get_permissions)
 echo "Selected permissions: $result_perm"
 
+if sudo adduser --gecos "" --disabled-password "$name"; then
+    echo "$name:$password" | sudo chpasswd
 
-if sudo adduser --gecos "" "$name"; then
     echo "User '$name' created successfully."
-
 
     sudo chown -R "$name:$name" "/home/$name"
     sudo chmod -R "$result_perm" "/home/$name"
