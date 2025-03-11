@@ -3,13 +3,13 @@
 *A collection of Bash scripts for user management, system monitoring, and automation.*
 
 This toolkit provides essential Bash scripts for system administration tasks, including:
-✅ User management (batch creation & deletion)
+- [x] User management (batch creation & deletion)
 
 ### Coming Soon
-✅ Disk space monitoring
-✅ Process management
-✅ System health checks
-✅ Full system audit report generation
+- [ ] Disk space monitoring
+- [ ] Process management
+- [ ] System health checks
+- [ ] Full system audit report generation
 
 
 # 🔧 Installation & Setup
