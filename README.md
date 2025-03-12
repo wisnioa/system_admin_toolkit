@@ -4,9 +4,9 @@
 
 This toolkit provides essential Bash scripts for system administration tasks, including:
 - [x] User management (batch creation & deletion)
+- [x] Disk space monitoring
 
 ### Coming Soon
-- [ ] Disk space monitoring
 - [ ] Process management
 - [ ] System health checks
 - [ ] Full system audit report generation
