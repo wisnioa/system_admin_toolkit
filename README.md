@@ -20,3 +20,7 @@ Clone the repository and navigate into the directory:
 git clone https://github.com/wisnioa/system_admin_toolkit.git
 cd system_admin_toolkit
 ```
+
+## Development Environment
+
+This project was developed in a virtualized Linux environment using **VirtualBox**, due to limitations in Windows Home Edition that prevent full support for WSL2.
