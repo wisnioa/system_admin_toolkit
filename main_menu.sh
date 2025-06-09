@@ -8,7 +8,9 @@ while true; do
     echo "3) Delete a user"
     echo "4) Monitor disk space"
     echo "5) Process management"
-    echo "6) Exit"
+    echo "6) Run a system health check"
+    echo "7) Run a full system audit"
+    echo "8) Exit"
     read -p "Choose an option [1-6]: " choice
 
     case "$choice" in
@@ -17,7 +19,9 @@ while true; do
         3) bash deleteuser.sh ;;
         4) bash monitordiskspace.sh ;;
         5) bash process_manager.sh ;;
-        6) echo "Exiting. Goodbye!"; break ;;
+        6) bash runsystemhealthcheck.sh;;
+        7) bash runfullsystemaudit.sh;;
+        8) echo "Exiting. Goodbye!"; break ;;
         *) echo "Invalid option. Please try again." ;;
     esac
 
