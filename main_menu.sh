@@ -11,7 +11,7 @@ while true; do
     echo "6) Run a system health check"
     echo "7) Run a full system audit"
     echo "8) Exit"
-    read -p "Choose an option [1-6]: " choice
+    read -p "Choose an option [1-8]: " choice
 
     case "$choice" in
         1) bash createuser.sh ;;
