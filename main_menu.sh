@@ -20,7 +20,7 @@ while true; do
         4) bash monitordiskspace.sh ;;
         5) bash process_manager.sh ;;
         6) bash runsystemhealthcheck.sh;;
-        7) bash runfullsystemaudit.sh;;
+        7) sudo bash runfullsystemaudit.sh;;
         8) echo "Exiting. Goodbye!"; break ;;
         *) echo "Invalid option. Please try again." ;;
     esac
