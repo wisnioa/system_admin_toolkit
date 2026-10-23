@@ -43,7 +43,7 @@ To exit the menu at any time, select the "Exit" option or press `Ctrl+C`.
 
 ## Development Environment
 
-This project was developed in a virtualized Linux environment using **VirtualBox**, due to limitations in Windows Home Edition that prevent full support for WSL2.
+This project was developed in a VirtualBox Linux virtual machine after encountering compatibility and configuration limitations with my existing Windows 10 Home and WSL2 environment.
 
 ## Author
 
